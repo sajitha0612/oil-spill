@@ -1,0 +1,11 @@
+# Core service (step 1)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# --- Added in later build-order steps, not installed yet ---
+# Detection (step 2): numpy, opencv-python or scikit-image, rasterio (SAR GeoTIFF I/O)
+# Drift (step 3): opendrift, netCDF4, xarray
+# AIS scoring (step 4): pandas
